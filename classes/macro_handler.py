@@ -163,8 +163,8 @@ class S3MacroManager:
             logger.error(f"Error getting most recent dates for each organization: {e}")
             return None
 
-    def store_marketsense_marketdigest(self, date, data):
-        key = f"{self.prefix}/marketsense/marketdigest_{date}.json"
+    def store_market_digest(self, date, data):
+        key = f"{self.prefix}/market_digest/marketdigest_{date}.json"
         content = json.dumps(data)
         try:
             self.s3.put_object(Body=content, Bucket=self.bucket, Key=key)

@@ -190,7 +190,7 @@ if __name__ == "__main__":
         ecs = boto3.client('ecs', region_name='eu-central-1')
         try:
             response = ecs.update_service(
-                cluster='marketsense-cluster',
+                cluster='market-digest-cluster',
                 service='macro-chat-service',
                 forceNewDeployment=True
             )

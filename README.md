@@ -1,4 +1,3 @@
-
 # Market Digest
 
 ## Overview
@@ -131,7 +130,7 @@ python run_scrapers.py -df 2024-09-01 --scrapers morgan_stanley goldman
 Once the scraping is complete, verify that the reports are stored in your S3 bucket:
 
 ```bash
-aws s3 ls s3://marketsense-ai/marketdigest_pdfs_db/
+aws s3 ls s3://your-bucket-name/marketdigest_pdfs_db/
 ```
 
 ## Project Structure
